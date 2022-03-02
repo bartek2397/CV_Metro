@@ -1,0 +1,71 @@
+.home {
+    background-image: url(../../../assets/img/home_img.jpg);
+    min-height: 100vh;
+    background-position: 50% 0px;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &::before {
+        content: '';
+        background-color: $homeOverlayColor;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        position: absolute;
+        top: 16%;
+        right: 50%;
+        transform: translateX(50%);
+        z-index: 2;
+        text-align: center;
+
+        h1 {
+            color: $homeHeaderColor;
+            font-size: 72px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: $homeHeaderColor;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin: 0 5px;
+                color: $socialsColor;
+                transition: 300ms;
+
+                span {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 1px solid $socialsColor;
+                    position: relative;
+
+                    .fa-brands {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+                }
+
+                &:hover {
+                    color: $socialsHoverColor;
+                }
+            }
+        }
+    }
+}
