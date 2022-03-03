@@ -25,6 +25,7 @@
         z-index: 2;
         text-align: center;
 
+        
         h1 {
             color: $homeHeaderColor;
             font-size: 72px;
@@ -64,9 +65,17 @@
 
                 &:hover {
                     color: $socialsHoverColor;
-                    background-color: map-get($map: social , $key: color);
                 }
             }
+        }
+
+        .photo {
+            border-radius: 50%;
+            position: absolute;
+            top: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 10px solid #fff;
         }
     }
 }

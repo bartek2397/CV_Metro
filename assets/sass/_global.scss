@@ -1,5 +1,20 @@
 body {
     font-family: $FontTwo;
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top: 72px;
+        left: 240px;
+    }
+
+    &.menuOpen {
+        .navigation {
+            display: block;
+            transition: 300ms;
+        }
+    }
 }
 .container {
     max-width: 1140px;
@@ -8,4 +23,25 @@ body {
 }
 a {
     text-decoration: none;
+}
+.globalHeader {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 4px;
+    color: $globalHeaderColor;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: $globalHeaderAfterColor;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

@@ -1,6 +1,8 @@
 .navigation {
+    display: none;
     position: fixed;
     z-index: 3;
+    transition: 300ms;
 
     .menu {
         display: block;
@@ -8,8 +10,6 @@
         margin: 60px;
         background-color: $menuOverlayColor;
         width: 250px;
-        
-
 
         .title {
             background-color: $menuTitleBgColor;
@@ -20,6 +20,7 @@
             height: 70px;
             padding: 25px 40px;
             text-align: left;
+            position: relative;
         }
 
         li {

@@ -1,0 +1,13 @@
+.about {
+    padding: 250px 0;
+
+    p {
+        color: $paragraphColor;
+        line-height: 25px;
+
+        &:first-of-type {
+            font-weight: 700;
+            padding: 20px 0;
+        }
+    }
+}
