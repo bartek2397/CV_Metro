@@ -32,6 +32,25 @@ $socialsHoverColor: #fff;
 
 $paragraphColor: #7e868e;
 
+$twitterColor: #17c3f7;
+$facebookColor: #0049cf;
+$dribbbleColor: #df0089;
+$vimeoColor: #0087c5;
+$linkedInColor: #0f73c5;
+$gitHubColor: #000;
+$googleColor: #a50202;
+
+$socialMedia: (
+    'twitter': $twitterColor,
+    'facebook': $facebookColor,
+    'dribbble': $dribbbleColor,
+    'vimeo': $vimeoColor,
+    'linkedIn': $linkedInColor,
+    'gitHub': $gitHubColor,
+    'google': $googleColor
+);
+
+
 // $colors: #17c3f7, #0049cf, #df0089, #0087c5, #0f73c5, #000000, #a50202
  
 
