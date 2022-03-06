@@ -1744,6 +1744,7 @@ summary {
 
 .home .container {
   text-align: center;
+  position: relative;
 }
 
 .home .container .head .logo {
@@ -1892,10 +1893,21 @@ summary {
   color: #fff;
 }
 
-.home .container .avatar .photo {
-  border-radius: 50%;
+.home .container .avatar {
   margin: 0 auto;
-  border: 10px solid #fff;
+  text-align: center;
+  position: absolute;
+  bottom: -365px;
+  width: 100%;
+  display: block;
+}
+
+.home .container .avatar .photo {
+  border: 10px solid #eff0f4;
+  border-radius: 250px;
+  height: 460px;
+  margin: 0 auto;
+  width: 460px;
 }
 
 .about {

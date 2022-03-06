@@ -23,6 +23,7 @@
 
     .container {
         text-align: center;
+        position: relative;
         
         .head {
             .logo {
@@ -92,11 +93,19 @@
         
         
         .avatar {
+            margin: 0 auto;
+            text-align: center;
+            position: absolute;
+            bottom: -365px;
+            width: 100%;
+            display: block;
+
             .photo {
-                border-radius: 50%;
+                border: 10px solid #eff0f4;
+                border-radius: 250px;
+                height: 460px;
                 margin: 0 auto;
-                border: 10px solid #fff;
-            
+                width: 460px;
             }
         }
     }
