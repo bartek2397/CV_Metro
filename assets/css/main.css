@@ -4,7 +4,7 @@ body {
 
 body .hamburger {
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 5;
   top: 72px;
   left: 240px;
@@ -47,6 +47,19 @@ a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.btn {
+  display: block;
+  width: 250px;
+  height: 50px;
+  background-color: #F54F36;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -1819,4 +1832,88 @@ summary {
 .about p:first-of-type {
   font-weight: 700;
   padding: 20px 0;
+}
+
+.about .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .info .personalData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0;
+  width: calc(100% / 3);
+}
+
+.about .info .personalData .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .info .personalData .information p {
+  font-weight: 700;
+  padding: 0;
+}
+
+.about .info .personalData .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .info .personalData .data p {
+  font-weight: 400;
+  padding: 0;
+  margin-left: 25px;
+}
+
+.about .info .personalData .btnResume .fa-solid {
+  margin-right: 10px;
+}
+
+.about .info .hobbies {
+  display: block;
+}
+
+.about .info .hobbies h4 {
+  color: #7e868e;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 60px;
+}
+
+.about .info .hobbies .hobbyBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .info .hobbies .hobbyBox .singleHobby {
+  display: block;
+  width: 25%;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
 }

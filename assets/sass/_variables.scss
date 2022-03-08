@@ -7,6 +7,8 @@ $FontTwo: 'Raleway', sans-serif;
 $FontThree: 'Arizonia', cursive;
 $globalHeaderColor: #2c3d4f;
 $globalHeaderAfterColor: #F54F36;
+$btnBgColor: #F54F36;
+$btnFontColor: #fff;
 
 // ******************
 // MENU
@@ -25,6 +27,16 @@ $homeOverlayColor: rgba(53,60,79,.8);
 $homeHeaderColor: #fff;
 $socialsColor: rgb(143, 143, 143);
 $socialsHoverColor: #fff;
+
+$socialMedia: (
+    'twitter': #2fb6f5,
+    'facebook': #1f54b6,
+    'dribbble': #c52991,
+    'vimeo': #3370e0,
+    'linkedIn': #166cdd,
+    'gitHub': #000,
+    'google': #992121
+);
 
 // ******************
 // ABOUT
