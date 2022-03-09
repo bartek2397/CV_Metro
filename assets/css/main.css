@@ -1789,6 +1789,34 @@ summary {
   transition: 300ms;
 }
 
+.home .container .social a.btn-twitter:hover span {
+  background-color: #2fb6f5;
+}
+
+.home .container .social a.btn-facebook:hover span {
+  background-color: #1f54b6;
+}
+
+.home .container .social a.btn-dribbble:hover span {
+  background-color: #c52991;
+}
+
+.home .container .social a.btn-vimeo:hover span {
+  background-color: #3370e0;
+}
+
+.home .container .social a.btn-linkedIn:hover span {
+  background-color: #166cdd;
+}
+
+.home .container .social a.btn-gitHub:hover span {
+  background-color: #000;
+}
+
+.home .container .social a.btn-google:hover span {
+  background-color: #992121;
+}
+
 .home .container .social a span {
   display: block;
   width: 40px;
@@ -1838,6 +1866,7 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .about .info .personalData {
@@ -1890,6 +1919,7 @@ summary {
 
 .about .info .hobbies {
   display: block;
+  width: 66.666%;
 }
 
 .about .info .hobbies h4 {
@@ -1903,17 +1933,48 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about .info .hobbies .hobbyBox .singleHobby {
   display: block;
   width: 25%;
   height: 30px;
-  margin: 0 auto;
+  margin: 40px auto;
   text-align: center;
+}
+
+.about .info .hobbies .hobbyBox .singleHobby i {
+  font-size: 32px;
+  color: #7e868e;
+}
+
+.resume {
+  padding: 80px 0;
+  height: 100%;
+}
+
+.resume .lines .btnXP {
+  background-color: #dbdde5;
+  color: #2c3d4f;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.resume .lines .timeLine {
+  display: block;
+  width: 2px;
+  height: 100%;
+}
+
+.resume .job {
+  width: 50%;
 }

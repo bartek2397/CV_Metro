@@ -46,15 +46,11 @@
                 margin: 0 5px;
                 color: $socialsColor;
                 transition: 300ms;
-
-                @each $name, $color in $socialMedia {
-                    &.btn-{$name}: 
-                        background-color: transparent;
-
-                        &:hover {
-                            background-color: $socialMedia;
-                        }
                     
+                @each $name, $color in $socialMedia {
+                    &.btn-#{$name}:hover span{
+                        background-color: $color;
+                    }
                 }
 
                 span {
@@ -64,6 +60,7 @@
                     border-radius: 50%;
                     border: 1px solid $socialsColor;
                     position: relative;
+
 
                     .fa-brands {
                         position: absolute;
