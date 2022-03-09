@@ -3,9 +3,12 @@
     min-height: 100vh;
     background-position: 50% 0px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     top: 0;
     left: 0;
+    z-index: -2;
 
     &::before {
         content: '';
@@ -13,19 +16,16 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: -1;
         width: 100%;
         height: 100%;
     }
 
     .container {
-        position: absolute;
-        top: 16%;
-        right: 50%;
-        transform: translateX(50%);
-        z-index: 2;
         text-align: center;
-
+        position: relative;
         
+<<<<<<< HEAD
         h1 {
             color: $homeHeaderColor;
             font-size: 72px;
@@ -55,34 +55,96 @@
 
                 span {
                     display: block;
+=======
+        .head {
+            .logo {
+                position: relative;
+                transform: translateY(30%);
+            }
+            .info {
+                h1 {
+                    color: $homeHeaderColor;
+                    font-size: 72px;
+                    text-transform: uppercase;
+                }
+    
+                h2 {
+                    color: $homeHeaderColor;
+                    font-size: 32px;
+                    text-transform: uppercase;
+                }
+            }
+    
+            .social {
+                display: flex;
+                justify-content: center;
+    
+                .btn-social {
+                    display: flex;
+>>>>>>> 2a1e16475c18177cafd186800388383113c31bdb
                     width: 40px;
                     height: 40px;
+                    align-items: center;
+                    justify-content: center;
                     border-radius: 50%;
+                    text-decoration: none;
+                    transition: 400ms;
+                    background-color: transparent;
+                    color: $socialsColor;
                     border: 1px solid $socialsColor;
                     position: relative;
+<<<<<<< HEAD
 
 
+=======
+                    margin: 0 5px;
+    
+>>>>>>> 2a1e16475c18177cafd186800388383113c31bdb
                     .fa-brands {
                         position: absolute;
                         top: 50%;
                         left: 50%;
                         transform: translateX(-50%) translateY(-50%);
+                        color: $socialsColor;
+                        z-index: 3;
+                        transition: 400ms;
+                        
+    
                     }
-                }
-
-                &:hover {
-                    color: $socialsHoverColor;
+                    @each $name, $color in $socialMedia {
+                        &.btn-#{$name} {
+                            background-color: transparent;
+        
+                            &:hover {
+                                background-color: $color;
+                            }
+    
+                            &:hover .fa-brands {
+                                color:#fff;
+                            }
+                        }
+                    }
                 }
             }
         }
-
-        .photo {
-            border-radius: 50%;
+        
+        
+        .avatar {
+            margin: 0 auto;
+            text-align: center;
             position: absolute;
-            top: 125%;
-            left: 50%;
-            transform: translateX(-50%);
-            border: 10px solid #fff;
+            bottom: -365px;
+            width: 100%;
+            display: block;
+
+            .photo {
+                border: 10px solid #eff0f4;
+                border-radius: 250px;
+                height: 460px;
+                margin: 0 auto;
+                width: 460px;
+            }
         }
     }
-}
+}    
+    
