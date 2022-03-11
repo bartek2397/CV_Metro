@@ -2035,23 +2035,158 @@ summary {
 }
 
 .resume {
-  padding: 50px 0;
+  padding: 0;
   height: 100%;
 }
 
-.resume .lines .btnXP {
+.resume .container {
+  height: 100%;
+}
+
+.resume .container .btnXP {
   background-color: #dbdde5;
   color: #2c3d4f;
   text-align: center;
   margin: 0 auto;
+  position: relative;
+  font-size: 32px;
+  height: 60px;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 5px;
 }
 
-.resume .lines .timeLine {
+.resume .container .btnXP:hover {
+  color: #F54F36;
+}
+
+.resume .container .btnXP::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F54F36;
+  position: absolute;
+  bottom: -50px;
+  left: 126px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+.resume .container .btnXP .icon {
+  position: absolute;
+  left: 127px;
+  top: 65px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 3;
+  font-size: 18px;
+  color: #fff;
+}
+
+.resume .container .btnXP.btnEdu::after {
+  content: '';
+  left: 126px;
+  background-color: #1abb9b;
+}
+
+.resume .container .btnXP.btnEdu .icon {
+  left: 126px;
+}
+
+.resume .container .timeLine {
   display: block;
   width: 2px;
-  height: 100%;
+  height: 120%;
+  background-color: #dbdde5;
+  position: absolute;
+  left: 50%;
 }
 
-.resume .job {
+.resume .container .endCircle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dbdde5;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.resume .container .endCircle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: #2c3d4f;
+  font-size: 20px;
+}
+
+.resume .container .experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.resume .container .experience .job {
+  display: block;
   width: 50%;
+  position: relative;
+}
+
+.resume .container .experience .job .company, .resume .container .experience .job .period {
+  font-size: 18px;
+  color: #2c3d4f;
+}
+
+.resume .container .experience .job p {
+  color: #7e868e;
+}
+
+.resume .container .experience .job .circle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #dbdde5;
+}
+
+.resume .container .experience .job .circle.circleLeft {
+  position: absolute;
+  top: 30px;
+  right: -51px;
+}
+
+.resume .container .experience .job .circle.circleRight {
+  position: absolute;
+  top: 30px;
+  left: -49px;
+}
+
+.resume .container .experience .job h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  color: #2c3d4f;
+  text-transform: uppercase;
+}
+
+.resume .container .experience .job.seniorDev1, .resume .container .experience .job.seniorDev3 {
+  text-align: right;
+  margin: 0 40px 0 -40px;
+}
+
+.resume .container .experience .job.seniorDev2, .resume .container .experience .job.seniorDev4 {
+  margin: 60px -40px 0 40px;
+}
+
+.resume .container .experience .job:hover .circle {
+  background-color: #F54F36;
 }
