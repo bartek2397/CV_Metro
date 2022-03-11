@@ -28,30 +28,6 @@ $homeHeaderColor: #fff;
 $socialsColor: rgb(143, 143, 143);
 $socialsHoverColor: #fff;
 
-$socialMedia: (
-    'twitter': #2fb6f5,
-    'facebook': #1f54b6,
-    'dribbble': #c52991,
-    'vimeo': #3370e0,
-    'linkedIn': #166cdd,
-    'gitHub': #000,
-    'google': #992121
-);
-
-// ******************
-// ABOUT
-// ******************
-
-$paragraphColor: #7e868e;
-
-<<<<<<< HEAD
-// ******************
-// RESUME
-// ******************
-
-$XPbtnBgColor: #dbdde5;
-$XPbtnFontColor: #2c3d4f;
-=======
 $twitterColor: #17c3f7;
 $facebookColor: #0049cf;
 $dribbbleColor: #df0089;
@@ -70,16 +46,19 @@ $socialMedia: (
     'google': $googleColor
 );
 
->>>>>>> 2a1e16475c18177cafd186800388383113c31bdb
+// ******************
+// ABOUT
+// ******************
 
-// $colors: #17c3f7, #0049cf, #df0089, #0087c5, #0f73c5, #000000, #a50202
- 
+$paragraphColor: #7e868e;
+
+// ******************
+// RESUME
+// ******************
+
+$XPbtnBgColor: #dbdde5;
+$XPbtnFontColor: #2c3d4f;
 
 
-// '.twitter': rgb(23, 195, 247),
-//     '.facebook': rgb(0, 73, 207),
-//     '.dribble': rgb(223, 0, 137),
-//     '.vimeo': rgb(0, 135, 197),
-//     '.linkedIn': rgb(15, 115, 197),
-//     '.gitHub': rgb(0, 0, 0),
-//     '.google': rgb(165, 2, 2)
+
+
