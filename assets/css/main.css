@@ -158,7 +158,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -1760,25 +1760,23 @@ summary {
   position: relative;
 }
 
-.home .container .head .logo {
-  position: relative;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
+.home .container .logo {
+  padding-top: 150px;
 }
 
-.home .container .head .info h1 {
+.home .container h1 {
   color: #fff;
   font-size: 72px;
   text-transform: uppercase;
 }
 
-.home .container .head .info h2 {
+.home .container h2 {
   color: #fff;
   font-size: 32px;
   text-transform: uppercase;
 }
 
-.home .container .head .social {
+.home .container .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1787,7 +1785,6 @@ summary {
           justify-content: center;
 }
 
-<<<<<<< HEAD
 .home .container .social a {
   margin: 0 5px;
   color: #8f8f8f;
@@ -1795,42 +1792,92 @@ summary {
   transition: 300ms;
 }
 
+.home .container .social a.btn-twitter {
+  background-color: none;
+}
+
 .home .container .social a.btn-twitter:hover span {
-  background-color: #2fb6f5;
+  background-color: #17c3f7;
+}
+
+.home .container .social a.btn-twitter:hover .fa-brands {
+  color: #fff;
+}
+
+.home .container .social a.btn-facebook {
+  background-color: none;
 }
 
 .home .container .social a.btn-facebook:hover span {
-  background-color: #1f54b6;
+  background-color: #0049cf;
+}
+
+.home .container .social a.btn-facebook:hover .fa-brands {
+  color: #fff;
+}
+
+.home .container .social a.btn-dribbble {
+  background-color: none;
 }
 
 .home .container .social a.btn-dribbble:hover span {
-  background-color: #c52991;
+  background-color: #df0089;
+}
+
+.home .container .social a.btn-dribbble:hover .fa-brands {
+  color: #fff;
+}
+
+.home .container .social a.btn-vimeo {
+  background-color: none;
 }
 
 .home .container .social a.btn-vimeo:hover span {
-  background-color: #3370e0;
+  background-color: #0087c5;
+}
+
+.home .container .social a.btn-vimeo:hover .fa-brands {
+  color: #fff;
+}
+
+.home .container .social a.btn-linkedIn {
+  background-color: none;
 }
 
 .home .container .social a.btn-linkedIn:hover span {
-  background-color: #166cdd;
+  background-color: #0f73c5;
+}
+
+.home .container .social a.btn-linkedIn:hover .fa-brands {
+  color: #fff;
+}
+
+.home .container .social a.btn-gitHub {
+  background-color: none;
 }
 
 .home .container .social a.btn-gitHub:hover span {
   background-color: #000;
 }
 
+.home .container .social a.btn-gitHub:hover .fa-brands {
+  color: #fff;
+}
+
+.home .container .social a.btn-google {
+  background-color: none;
+}
+
 .home .container .social a.btn-google:hover span {
-  background-color: #992121;
+  background-color: #a50202;
+}
+
+.home .container .social a.btn-google:hover .fa-brands {
+  color: #fff;
 }
 
 .home .container .social a span {
   display: block;
-=======
-.home .container .head .social .btn-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
->>>>>>> 2a1e16475c18177cafd186800388383113c31bdb
   width: 40px;
   height: 40px;
   -webkit-box-align: center;
@@ -1847,10 +1894,9 @@ summary {
   color: #8f8f8f;
   border: 1px solid #8f8f8f;
   position: relative;
-  margin: 0 5px;
 }
 
-.home .container .head .social .btn-social .fa-brands {
+.home .container .social a span .fa-brands {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1862,95 +1908,11 @@ summary {
   transition: 400ms;
 }
 
-.home .container .head .social .btn-social.btn-twitter {
-  background-color: transparent;
-}
-
-.home .container .head .social .btn-social.btn-twitter:hover {
-  background-color: #17c3f7;
-}
-
-.home .container .head .social .btn-social.btn-twitter:hover .fa-brands {
-  color: #fff;
-}
-
-.home .container .head .social .btn-social.btn-facebook {
-  background-color: transparent;
-}
-
-.home .container .head .social .btn-social.btn-facebook:hover {
-  background-color: #0049cf;
-}
-
-.home .container .head .social .btn-social.btn-facebook:hover .fa-brands {
-  color: #fff;
-}
-
-.home .container .head .social .btn-social.btn-dribbble {
-  background-color: transparent;
-}
-
-.home .container .head .social .btn-social.btn-dribbble:hover {
-  background-color: #df0089;
-}
-
-.home .container .head .social .btn-social.btn-dribbble:hover .fa-brands {
-  color: #fff;
-}
-
-.home .container .head .social .btn-social.btn-vimeo {
-  background-color: transparent;
-}
-
-.home .container .head .social .btn-social.btn-vimeo:hover {
-  background-color: #0087c5;
-}
-
-.home .container .head .social .btn-social.btn-vimeo:hover .fa-brands {
-  color: #fff;
-}
-
-.home .container .head .social .btn-social.btn-linkedIn {
-  background-color: transparent;
-}
-
-.home .container .head .social .btn-social.btn-linkedIn:hover {
-  background-color: #0f73c5;
-}
-
-.home .container .head .social .btn-social.btn-linkedIn:hover .fa-brands {
-  color: #fff;
-}
-
-.home .container .head .social .btn-social.btn-gitHub {
-  background-color: transparent;
-}
-
-.home .container .head .social .btn-social.btn-gitHub:hover {
-  background-color: #000;
-}
-
-.home .container .head .social .btn-social.btn-gitHub:hover .fa-brands {
-  color: #fff;
-}
-
-.home .container .head .social .btn-social.btn-google {
-  background-color: transparent;
-}
-
-.home .container .head .social .btn-social.btn-google:hover {
-  background-color: #a50202;
-}
-
-.home .container .head .social .btn-social.btn-google:hover .fa-brands {
-  color: #fff;
-}
-
 .home .container .avatar {
   margin: 0 auto;
   text-align: center;
   position: absolute;
-  bottom: -365px;
+  bottom: -580px;
   width: 100%;
   display: block;
 }
@@ -2073,7 +2035,7 @@ summary {
 }
 
 .resume {
-  padding: 80px 0;
+  padding: 50px 0;
   height: 100%;
 }
 
